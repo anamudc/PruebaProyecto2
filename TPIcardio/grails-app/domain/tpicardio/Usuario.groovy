@@ -15,5 +15,8 @@ class Usuario extends Persona implements Serializable{
         altura(blank:false)
         imc(blank:false)
     }
+	String toString(){
+		cedula + "-" + nombre +" "+ apellido
+	 }
     
 }

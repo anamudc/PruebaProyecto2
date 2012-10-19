@@ -25,6 +25,7 @@ class AsistenciaController {
 	        if (!asistenciaInstance.save(flush: true)) {
 	            render view: 'create', model: [asistenciaInstance: asistenciaInstance]
 	            return
+                    
 	        }
 
 			flash.message = message(code: 'default.created.message', args: [message(code: 'asistencia.label', default: 'Asistencia'), asistenciaInstance.id])
